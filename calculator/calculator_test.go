@@ -19,42 +19,42 @@ func TestAdder(t *testing.T) {
 		{
 			name: "1 + 1",
 			args: args{
-				a: util.DecimalToBitAsBool(1),
-				b: util.DecimalToBitAsBool(1),
+				a: util.DecimalToBoolBitArray(1),
+				b: util.DecimalToBoolBitArray(1),
 			},
-			want: util.DecimalToBitAsBool(1 + 1),
+			want: util.DecimalToBoolBitArray(1 + 1),
 		},
 		{
 			name: "3 + 7",
 			args: args{
-				a: util.DecimalToBitAsBool(3),
-				b: util.DecimalToBitAsBool(7),
+				a: util.DecimalToBoolBitArray(3),
+				b: util.DecimalToBoolBitArray(7),
 			},
-			want: util.DecimalToBitAsBool(3 + 7),
+			want: util.DecimalToBoolBitArray(3 + 7),
 		},
 		{
 			name: "15 + 15",
 			args: args{
-				a: util.DecimalToBitAsBool(15),
-				b: util.DecimalToBitAsBool(15),
+				a: util.DecimalToBoolBitArray(15),
+				b: util.DecimalToBoolBitArray(15),
 			},
-			want: util.DecimalToBitAsBool(15 + 15),
+			want: util.DecimalToBoolBitArray(15 + 15),
 		},
 		{
 			name: "16 + 16",
 			args: args{
-				a: util.DecimalToBitAsBool(16),
-				b: util.DecimalToBitAsBool(16),
+				a: util.DecimalToBoolBitArray(16),
+				b: util.DecimalToBoolBitArray(16),
 			},
-			want: util.DecimalToBitAsBool(16 + 16),
+			want: util.DecimalToBoolBitArray(16 + 16),
 		},
 		{
 			name: "195728 + 312931741",
 			args: args{
-				a: util.DecimalToBitAsBool(195728),
-				b: util.DecimalToBitAsBool(31293129318),
+				a: util.DecimalToBoolBitArray(195728),
+				b: util.DecimalToBoolBitArray(31293129318),
 			},
-			want: util.DecimalToBitAsBool(195728 + 31293129318),
+			want: util.DecimalToBoolBitArray(195728 + 31293129318),
 		},
 	}
 	for _, tt := range tests {

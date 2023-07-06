@@ -6,7 +6,7 @@ import (
 	"strconv"
 )
 
-func DecimalToBitAsBool(src int32) []bool {
+func DecimalToBoolBitArray(src int32) []bool {
 	bin := fmt.Sprintf("%b", src)
 	var ret []bool
 	for _, b := range bin {
@@ -20,7 +20,7 @@ func DecimalToBitAsBool(src int32) []bool {
 	return ret
 }
 
-func BoolBitToDecimal(src []bool) int64 {
+func BoolBitArrayToDecimal(src []bool) int64 {
 	tmpStr := ""
 	for _, c := range src {
 		b := 0

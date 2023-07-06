@@ -27,8 +27,8 @@ func TestBoolBitToDecimal(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := BoolBitToDecimal(tt.args.src); got != tt.want {
-				t.Errorf("BoolBitToDecimal() = %v, want %v", got, tt.want)
+			if got := BoolBitArrayToDecimal(tt.args.src); got != tt.want {
+				t.Errorf("BoolBitArrayToDecimal() = %v, want %v", got, tt.want)
 			}
 		})
 	}
@@ -56,8 +56,8 @@ func TestDecimalToBitAsBool(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := DecimalToBitAsBool(tt.args.src); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("DecimalToBitAsBool() = %v, want %v", got, tt.want)
+			if got := DecimalToBoolBitArray(tt.args.src); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("DecimalToBoolBitArray() = %v, want %v", got, tt.want)
 			}
 		})
 	}

@@ -7,10 +7,10 @@ import (
 )
 
 func main() {
-	a := util.DecimalToBitAsBool(192)
-	b := util.DecimalToBitAsBool(65536)
+	a := util.DecimalToBoolBitArray(192)
+	b := util.DecimalToBoolBitArray(65536)
 	res := calculator.Adder(a, b)
-	log.Println(util.BoolBitToDecimal(res))
-	res2 := calculator.Adder(res, util.DecimalToBitAsBool(1_000_000))
-	log.Println(util.BoolBitToDecimal(res2))
+	log.Println(util.BoolBitArrayToDecimal(res))
+	res2 := calculator.Adder(res, util.DecimalToBoolBitArray(1_000_000))
+	log.Println(util.BoolBitArrayToDecimal(res2))
 }
